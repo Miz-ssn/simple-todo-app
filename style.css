@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+
+/* ＝＝全体＝＝ */
+body {
+  margin: 0;
+  background: #fdf7f5;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 32px auto;
+  padding: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  background: #fffdfc;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ＝＝タイトル・見出し＝＝ */
+h1 {
+  margin: 0;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+/* ＝＝☑の基本設定＝＝ */
+
+
+/* ＝＝Todoリスト・li＝＝ */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 16px;
+  border-left: 8px solid transparent;
+  padding-left: 8px;
+}
+
+li input {
+  margin-right: 8px;
+}
+
+li span {
+  display: inline-block;
+
+}
+
+li label {
+  margin-right: 8px;
+}
+
+li input:checked+span {
+  transform: scale(0.95);
+  transition: 0.4s;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+/* ＝＝フォーム＝＝ */
+#add-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+  margin-top: 24px;
+}
+
+#todo-title {
+  flex: 2;
+}
+
+#due-date {
+  flex: 1;
+  min-width: 100px;
+}
+
+/* ＝＝タグカラー選択＝＝ */
+select#tag-select {
+  padding: 4px;
+  width: 40px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  appearance: none;
+}
+
+select#tag-select option {
+  color: transparent;
+  height: 30px;
+}
+
+/* ＝＝色＝＝ */
+/* rose（ピンク系） */
+li.rose {
+  border-left-color: #f0c1c1;
+}
+
+input.rose {
+  accent-color: #f0c1c1;
+}
+
+/* beige（ベージュ系） */
+li.beige {
+  border-left-color: #e3cfc0;
+}
+
+input.beige {
+  accent-color: #e3cfc0;
+}
+
+/* sage（グリーン系） */
+li.sage {
+  border-left-color: #c9e4ca;
+}
+
+input.sage {
+  accent-color: #c9e4ca;
+}
+
+/* sky（ブルー系） */
+li.sky {
+  border-left-color: #daeaf6;
+}
+
+input.sky {
+  accent-color: #daeaf6;
+}
+
+/* mauve（パープル系） */
+li.mauve {
+  border-left-color: #d6cadd;
+}
+
+input.mauve {
+  accent-color: #d6cadd;
+}
+
+/* ＝＝期限＝＝ */
+label small {
+  display: block;
+  font-size: 10px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.due-today {
+  color: #cc6666;
+  font-weight: bold;
+}

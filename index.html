@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Todo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      Todoリスト
+      <button id="purge">まとめて削除</button>
+    </h1>
+
+    <ul id="todos">
+      <!-- <li>
+        <label>
+          <input type="checkbox">
+          <span>aaa aaa aaa aaa aaa aaa aaa</span>
+        </label>
+        <button>x</button>
+      </li>-->
+    </ul>
+
+    <form id="add-form">
+      <input type="text" id="todo-title">
+      <input type="date" id="due-date">
+      <select id="tag-select">
+        <option value="" disabled selected hidden>color</option>
+        <option value="rose" style="background-color:#f0c1c1;">rose:　</option>
+        <option value="beige" style="background-color:#e3cfc0;">beige:　</option>
+        <option value="sage" style="background-color:#c9e4ca;">sage:　</option>
+        <option value="sky" style="background-color:#daeaf6;">sky:　</option>
+        <option value="mauve" style="background-color:#d6cadd;">mauve:　</option>
+      </select>
+      <button>Add</button>
+    </form>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
